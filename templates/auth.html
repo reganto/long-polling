@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<script src="{{ static_url('js/dyna.js') }}"></script>
+{% end %}
+
+{% block body %}
+<div>
+    <form method="POST" id="reg" onsubmit="return false;" >
+        <input type="submit" value="Register" 
+           onclick="JavaScript:manage('/dev/');"  /> 
+    </form>
+</div>
+
+<img id="image" width=500 height=500/>
+
+{% end %}
